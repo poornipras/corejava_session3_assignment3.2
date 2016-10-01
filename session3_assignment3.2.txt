@@ -1,0 +1,60 @@
+3.2 Write a Java statement to assign the value true to the boolean variable same ,
+when the String variable S1 has the same contents as the String variable S2 ,
+and false otherwise.
+
+
+(This is taking input for the two strings from the user using BufferedReader)
+
+import java.io.*;
+
+public class stringsameinput
+{
+public static void main(String[] args) throws IOException
+{
+
+	boolean same=false;
+	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+	System.out.println("Enter the 1st string");
+	 String s1=br.readLine();
+	 System.out.println("Enter the 2nd string:");
+	 String s2=br.readLine();	 	 
+	
+	 if(s1.equals(s2)==true)
+	 {
+		 same=true;
+		 System.out.println( same+"  " +"The two strings are the same");
+	 }
+	 else
+	 {
+		 
+		 System.out.println( same+"  "+"Sorry!The two strings are not the same");
+	 }
+	
+}
+}
+
+
+(This program just checks the given two strings to be same or not)
+
+public class stringchecksame
+{
+	
+public static void main(String[] args)
+{
+	boolean same=false;
+    String s1="hello";
+    String s2="Hello";
+
+      if(s1.equals(s2)==true)
+        {
+	      
+	      same=true;
+	      System.out.println("Value of same is :"+same + "  " +"Strings are same");
+        }
+      else
+         {
+	       System.out.println("Value of same is :"+same+" "+"Strings are not same");
+	       
+         }
+   }
+}
